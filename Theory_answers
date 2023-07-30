@@ -1,0 +1,76 @@
+Section1:  Theory Questions
+
+
+1.	What does SDLC stand for?
+
+SDLC stands for Software Development Life Cycle.
+
+2.	What exception is thrown when you divide a number by 0?
+
+The “ZeroDivisionError”. To handle this error, it is helpful to use a “Try-Except” block or a conditional statement.
+
+3.	What is the git command that moves code from the local repository
+to the remote repository?
+
+This is the “Git Push” command
+
+4.	What does NULL represent in a database?
+
+In a databse, “null” indicates that the value is missing or hasn’t been defined.
+
+5.	Name 2 responsibilities of the Scrum Master
+
+The Scrum Master is responsible for ensuring that the team of Developers understand the project and assist them with any query as well as making sure that the team deliver the expected results within a timeframe (usually referred to as “Sprints”).
+
+They are also responsible to facilitate and remove any impediments that team may encounter in order to complete the project smoothly, such as organising meetings with the Product Owner to address any potential issues.
+
+6.	Name 2 debugging methods, and when you would use them.
+
+You can use Print Statements and Debuggers.
+
+Print Statements are a way to debug your code. It involves adding lines of code that show specific values or messages during the execution of the program so we can understand what is happening and find potential issues.
+
+Debuggers are tools already provided in programming applications (such as PyCharm) within that help in debugging code. They allow us to step through the code line by line and pause the program at specific points, to ensure that it runs smoothly.
+
+7.	Looking at the following code, describe a case where this function
+would throw an error when called. Describe this case and talk about
+what exception handling you’ll need.
+
+def can_pay(price, cash_given):
+if cash_given >= price:
+return True
+else:
+return False
+
+The function “can_pay” compares the price of an item with the “cash_given” and if the cash_given is equal or enough to cover the payment it will return “True”. If the cash_given is insufficient the program will return “False” of said item.
+
+This code could throw an error if, for example, the cash_given is not a numerical value. In this case we would encounter a “ValueError” and what we can do is including a try-except. If a “ValueError” occurs during the conversion, it means that cash_given is not a numeric value, and the function catches the exception in the except block of code. It will then return an error message indicating that the cash_given input must be a numeric value.
+
+8.	What is git branching? Explain how it is used in Git
+
+Git branching enables you to create different versions of your project within a Git repository. It allows you to work on different features or bug fixes separately by switching between branches, keeping their changes isolated and organised.
+
+9.	Design a restaurant ordering system.
+You do not need to write code, but describe a high-level approach:
+a. Draw a list of key requirements
+b. What are your main considerations and problems?
+c. What components or tools would you potentially use?
+
+Key Requirements:
+
+-	Menu Management: Ability to create, update, and delete menu items
+-	Ordering Food: Customers can view the menu, select items, specify quantities, and add them to their order.
+-	Payment Option: Integrating secure online payments by card or payment options, tips, etc.
+
+Main Considerations and Problems:
+
+1.	User Experience: Designing an intuitive and user-friendly interface for customers and staff.
+2.	Security: Implementing secure authentication and encryption protocols to protect sensitive customer data and payment information.
+3.	Order Synchronisation: Making sure that orders made online are synchronised with the kitchen in real-time.
+
+Potential Components or Tools:
+
+•	HTML, JavaScript for the Front-End development
+•	MySQL to create a Database of customers, orders, inventory
+
+
